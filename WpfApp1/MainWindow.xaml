@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="1200">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label x:Name="firstLabel" Grid.Row="0" Grid.Column="0" Content="First Label" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="60,80,60.8,80.4"></Label>
+        <Label x:Name="secondLabel" Grid.Row="0" Grid.Column="2" Content="Second Label" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="60,80,60.8,80.4"></Label>
+        <Label x:Name="thirdLabel" Grid.Row="1" Grid.Column="0" Content="Third Label" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="60,80,60.8,80.4"></Label>
+        <Label x:Name="forthLabel" Grid.Row="1" Grid.Column="2" Content="Forth Label" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="60,80,60.8,80.4"></Label>
+        <Button x:Name="btn1" Grid.Row="0" Grid.Column="1" Foreground="Blue" Content="Push me" FontSize="50" Click="Button_Click" Margin="80.2,20,79.6,20.4" Background="#FF24D627" FontWeight="Bold" FontFamily="Showcard Gothic"/>
+        <Button x:Name="btn2" Grid.Row="1" Grid.Column="1" Foreground="Blue" Content="Push me" FontSize="50" Click="Button_Click" Margin="80.2,20,79.6,20.4" Background="#FF24D627" FontWeight="Bold" FontFamily="Showcard Gothic" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave"/>
+    </Grid>
+</Window>
